@@ -87,13 +87,9 @@ def ppv(tp_data,fp_data):
     for i in range(0,n):
         tp = tp_data.iloc[i]
         fp = fp_data.iloc[i]
-        # print(tp)
         tp_sum += tp
         fp_sum += fp
-        # print(tp_sum)
     result = tp_sum / (tp_sum + fp_sum)
-    # print(tp_sum)
-    # print(fp_sum)
     return result
 
 def f_measure(tp_data, fp_data, fn_data):
@@ -108,7 +104,6 @@ def f_measure(tp_data, fp_data, fn_data):
     f = 0
     result = 0
     n = len(tp_data)
-    # print(n)
     for i in range (0, n):
         tp = float(tp_data.iloc[i])
         fp = float(fp_data.iloc[i])
@@ -344,7 +339,6 @@ if args.graphics == True:
 
     plt.yticks([0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1])
     plt.gcf().subplots_adjust(bottom=0.28, left=0.10, right=0.94, top=0.91)
-    # plt.grid()
     plt.legend()
     plt.show()
 
@@ -373,5 +367,4 @@ if args.output == True:
     mcc_drtr]
     print(output_name)
     data_final = pd.DataFrame(data_x)
-    # print(data_final)
     export_csv = data_final.to_csv(output_name)
