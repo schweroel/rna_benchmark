@@ -13,10 +13,10 @@ from matplotlib.pyplot import figure
 
 ### ================= settings for pandas and numpy ======================== ###
 # prevents output from bein truncated when printed
-pd.set_option('display.max_rows', 10000) #some default pandas settings will chop data
+pd.set_option('display.max_rows', 10000)
 pd.set_option('display.max_columns', 10000)
 pd.set_option('display.width', 10000)
-np.set_printoptions(threshold=sys.maxsize) #if printed out, matrix won't be truncated
+np.set_printoptions(threshold=sys.maxsize)
 
 
 ### ================= argparse arguments =================================== ###
