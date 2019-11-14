@@ -34,7 +34,7 @@ skip = (f.readline())
 seq = (f.readline())
 
 pickle_file_name = ID + ".pickle"
-pickle_path = "/media/johannes/Seagate Backup Plus Drive/VIENNARNAPRAKT/DrTrafo/pickledata/" + pickle_file_name
+pickle_path = "/home/" + pickle_file_name
 
 ### ================= RNAfold-section ====================================== ###
 fc = RNA.fold_compound(seq)
