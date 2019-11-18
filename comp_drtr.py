@@ -37,7 +37,7 @@ parser.add_argument('--verbose','-v', action='store_true',
 
 parser.add_argument('--identifier','-i', action='store',
                     default="ASE_00089",
-                    help='parse fasta ID')
+                    help='parse ID')
 
 parser.add_argument('--directory','-d', action='store',
                     default=".",
